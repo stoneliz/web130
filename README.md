@@ -1,0 +1,2 @@
+# web130
+Building on existing knowledge of HTML, CSS, and JavaScript/jQuery; students will design and develop a standards-compliant, responsive website. HTML5, CSS3, and more advanced JavaScript (client and server side) scripting will be utilized. Students are encouraged to investigate and include emerging technologies and approaches into their web project. Students will create a final project to place in their portfolio.
