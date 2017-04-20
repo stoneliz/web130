@@ -1,0 +1,46 @@
+@media screen and (max-width: 39.9em) {
+  article {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1; } }
+@media screen and (min-width: 40em) and (max-width: 63.9em) {
+  article {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2; } }
+@media screen and (min-width: 64em) {
+  article {
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3; } }
+
+@media screen and (max-width: 39.9em) {
+  main {
+    background: #9de5fd; } }
+@media screen and (min-width: 40em) and (max-width: 63.9em) {
+  main {
+    background: #e1f0c1; } }
+@media screen and (min-width: 64em) {
+  main {
+    background: #ffbd68; } }
+
+header, footer {
+  background: #21B6A8;
+  height: 50px;
+  color: #0c0c0c;
+  font-family: Tahoma;
+  font-weight: 600;
+  text-align: center;
+  padding: 1em; }
+
+header {
+  font-size: 3em; }
+
+body {
+  font-family: "Helvetica Neue", Sans-Serif;
+  color: #333333; }
+
+h1 {
+  color: #3e3e3e; }
+
+/*# sourceMappingURL=app.css.map */
