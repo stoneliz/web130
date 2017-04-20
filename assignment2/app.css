@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 44 of /home/ubuntu/workspace/client/scss/app.scss
+
+39:     h2 {
+40:     font-family: "Helvetica Neue", Sans-Serif;
+41:     color: $gray;
+42: }
+
+Backtrace:
+/home/ubuntu/workspace/client/scss/app.scss:44
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:667:in `block'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.0/bin/scss:23:in `load'
+/usr/local/rvm/gems/ruby-2.3.0/bin/scss:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 44 of /home/ubuntu/workspace/client/scss/app.scss\A \A 39:     h2 {\A 40:     font-family: \"Helvetica Neue\", Sans-Serif;\A 41:     color: $gray;\A 42: }"; }

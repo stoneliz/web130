@@ -1,0 +1,28 @@
+$smallMax: 39.9em;
+$mediumMin: 40em;
+$mediumMax: 63.9em;
+$largeMin: 64em;
+
+$orange: #ffbd68;
+$gray: #333333;
+$blue: #9de5fd;
+$green: #e1f0c1;
+$teal: #21B6A8;
+
+@mixin size($size) {
+    @if $size == small {
+        @media screen and (max-width: $smallMax) {
+            @content;
+        }
+    }
+    @else if $size == medium {
+        @media screen and (min-width: $mediumMin) and (max-width: $mediumMax){
+            @content;
+        }
+    }
+    @else if $size == large {
+        @media screen and (min-width: $largeMin){
+            @content;
+        }
+    }
+}

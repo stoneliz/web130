@@ -1,0 +1,52 @@
+@import 'bourbon/bourbon';
+@import 'media';
+
+
+article {
+  @include size(small) {
+    @include columns(1);
+  }
+  @include size(medium) {
+    @include columns(2);
+  }
+   @include size(large) {
+    @include columns(3);
+  }
+}
+
+main {
+  @include size(small) {
+    background: $blue;
+  }
+  @include size(medium) {
+    background: $green;
+  }
+   @include size(large) {
+    background: $orange;
+  }
+}
+
+
+header, footer{
+  
+    background: $teal;
+    height: 50px;
+    color: #0c0c0c;
+    font-family: Tahoma;
+    font-weight: 600;
+    text-align: center;
+    padding: 1em;
+}
+
+header {
+    font-size: 3em;
+}
+body {
+    font-family: "Helvetica Neue", Sans-Serif;
+    color: $gray;
+}
+
+h1 {
+    color: #3e3e3e;
+}
+
