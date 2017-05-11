@@ -1,0 +1,175 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  margin:0;
+} 
+
+nav {
+  position: relative;
+  background: $lightblue;
+  width: 100%;
+  color: $white;
+  font-weight: 700;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  @include clearfix;
+  @include forScreenSize(640){
+    display: flex;
+  }
+   li {
+      line-height: 50px;
+      display: block;
+      a:hover{
+        background: $darkblue;
+      }
+      @include forScreenSize(640) {
+        width: 100%;
+      }
+      @include forScreenSize(900) {
+        width: 10%;
+        margin-bottom: 0;
+      }
+   }
+    a {
+      padding: 5px 50px;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.3s;
+      padding: 5px;
+      @include forScreenSize(900){
+      }
+    }
+}
+
+img {
+  position: absolute;
+  left: 5%;
+  top: 22px;
+  height: 15px;
+  width: auto;
+}
+
+.mobile-only {
+  display: block;
+  color: $white;
+  position: relative;
+  margin-bottom: 17.5px;
+  padding-top: 22px;
+  text-align: center;
+  height: 50px;
+  background-image: url("../images/menu.png");
+  background-repeat: no-repeat;
+  @include forScreenSize(640) {
+    display: none;
+  }
+}
+  
+.mobile-only.x {
+  background-image: url("../images/close.png") !important;
+}
+  
+#nav {
+  display: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  @include forScreenSize(640) {
+    display: flex;
+    li {
+      width: 33%;
+      margin-right: .5%;
+      display: inline-block;
+    }
+    li:last-child {
+      margin-right:0;
+    }
+  }
+  @include forScreenSize(900) {
+    display: block;
+    text-align: left;
+    padding: 20px;
+    li {
+      width: auto;
+    }
+  }
+}
+
+#nav.expand {
+  display: block;
+}
+  
+li.expand {
+    ul {
+         @include forScreenSize(640) {
+          // display: inline !important;
+          position: relative;
+          background: $lightblue;
+          padding-top: 20px;
+         }
+    }
+}
+
+#subnav {
+  display: none;
+  width: 100%;
+  @include forScreenSize(640) {
+    top: 50px;
+    left: 0;
+  }
+  @include forScreenSize(900) {
+    left: 10%;
+  }
+  
+  > li {
+    margin: 0;
+    @include forScreenSize(640) {
+      width: 25%;
+      float: left;
+    }
+    @include forScreenSize(900) {
+      float: none;
+      text-align: center;
+      width: 10%;
+      line-height: 30px;
+      display: block;
+    }
+  }
+}
+  
+.expandSubNav {
+  display: block !important;
+  @include forScreenSize(640) {
+    a{
+      background: $lightblue;
+    }
+    a:hover {
+      background: $darkblue;
+    }
+    .active {
+  background: $darkblue;
+    }
+  }
+}
