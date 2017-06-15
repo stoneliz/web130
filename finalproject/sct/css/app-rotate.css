@@ -1,0 +1,18 @@
+main {
+  background-color: #ffbd68;
+  color: #333333;
+  padding: 40px;
+  font-family: "Helvetica Neue", Sans-Serif; }
+
+@media screen and (max-width: 39.9em) {
+  article {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1; } }
+@media screen and (min-width: 40em) and (max-width: 63.9em) {
+  article {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2; } }
+
+/*# sourceMappingURL=app.css.map */

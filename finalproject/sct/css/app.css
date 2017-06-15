@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia");
+@media screen and (max-width: 39.9em) {
+  article {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1; } }
+@media screen and (min-width: 40em) and (max-width: 63.9em) {
+  article {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2; } }
+@media screen and (min-width: 64em) {
+  article {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1; } }
+
+header {
+  max-width: 940px;
+  margin: 0 auto; }
+
+h1 {
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 100px;
+  text-align: center; }
+
+h2 {
+  font-weight: bold;
+  font-family: 'Times New Roman'; }
+
+h3 {
+  color: #4c4c4c;
+  font-family: 'Times New Roman';
+  font-style: italic; }
+
+label {
+  font-weight: normal; }
+
+#weather {
+    text-align: center;
+}
+
+#date {
+    float: right;
+    margin-right: 200px;
+}
+
+/*# sourceMappingURL=app.css.map */
